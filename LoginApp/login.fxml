@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="527.0" maxWidth="424.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginApp.LoginController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="DB Connection Status:" />
+      <Label fx:id="dbStatus" layoutX="160.0" layoutY="14.0" prefHeight="18.0" prefWidth="256.0" />
+      <TextField fx:id="userField" layoutX="91.0" layoutY="55.0" prefHeight="27.0" prefWidth="321.0" promptText="Username" />
+      <Button fx:id="loginBtn" layoutX="13.0" layoutY="162.0" mnemonicParsing="false" onAction="#Login" prefHeight="27.0" prefWidth="398.0" text="Login" />
+      <Label layoutX="17.0" layoutY="60.0" text="Username:" />
+      <Label layoutX="17.0" layoutY="98.0" text="Password:" />
+      <ComboBox fx:id="divAccess" layoutX="91.0" layoutY="127.0" prefHeight="27.0" prefWidth="321.0" promptText="Select Division Access" />
+      <PasswordField fx:id="pwdField" layoutX="91.0" layoutY="93.0" prefHeight="27.0" prefWidth="321.0" promptText="Password" text="password" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
